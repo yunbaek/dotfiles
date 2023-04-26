@@ -25,8 +25,8 @@ logger() {
 }
 
 () {
-  logger "info" "Install and upgrade (by default) all dependencies from the Brewfile ..."
-  curl --silent https://raw.githubusercontent.com/yunbaek/dotfiles/macos/system/brew_file > Brewfile
+  logger "info" "Install and upgrade (by default) all dependencies from the brew_file ..."
+  curl --silent https://raw.githubusercontent.com/yunbaek/dotfiles/macos/system/brew_file > brew_file
   brew bundle
-  rm Brewfile 
+  rm brew_file 
 }
